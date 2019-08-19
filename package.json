@@ -1,30 +1,26 @@
 {
-	"name": "unicorn-fun",
-	"version": "0.0.0",
+	"name": "@sevenflash/node-module-boilerplate",
+	"version": "0.0.2",
 	"description": "My awesome module",
 	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/unicorn-fun",
-	"author": {
-		"name": "YOUR NAME",
-		"email": "YOUR EMAIL",
-		"url": "YOUR WEBSITE"
+	"repository": "https://github.com/7flash/node-module-boilerplate",
+  "main": "lib/index.js",
+  "author": {
+		"name": "Igor Berlenko",
+		"email": "igor@berlenko.com"
 	},
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "nyc riteway test/*.test.js | tap-nirvana",
+		"coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
 	},
-	"files": [
-		"index.js"
-	],
-	"keywords": [
-		"unicorn",
-		"fun"
-	],
 	"dependencies": {},
 	"devDependencies": {
-		"ava": "^2.1.0",
-		"xo": "^0.24.0"
+		"coveralls": "^3.0.6",
+		"nyc": "^14.1.1",
+		"riteway": "^6.1.0",
+		"tap-nirvana": "^1.1.0"
 	}
 }

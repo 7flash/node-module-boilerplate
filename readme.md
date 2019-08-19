@@ -1,33 +1,8 @@
+[![Build Status](https://travis-ci.org/7flash/node-module-boilerplate.svg?branch=master)](https://travis-ci.org/7flash/node-module-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/7flash/node-module-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/7flash/node-module-boilerplate?branch=master)
+![npm (scoped)](https://img.shields.io/npm/v/sevenflash/node-module-boilerplate)
+
 # node-module-boilerplate
-
-> Boilerplate to kickstart creating a Node.js module
-
-This is what I use for [my own modules](https://www.npmjs.com/~sindresorhus).
-
-Also check out [`node-cli-boilerplate`](https://github.com/sindresorhus/node-cli-boilerplate).
-
-
-## Getting started
-
-**Click the "Use this template" button.**
-
-Alternatively, create a new directory and then run:
-
-```
-$ curl -fsSL https://github.com/sindresorhus/node-module-boilerplate/archive/master.tar.gz | tar -xz --strip-components=1
-```
-
-There's also a [Yeoman generator](https://github.com/sindresorhus/generator-nm).
-
-
----
-
-**Remove everything from here and above**
-
----
-
-
-# unicorn-fun [![Build Status](https://travis-ci.com/YOUR-GITHUB-USERNAME/unicorn-fun.svg?branch=master)](https://travis-ci.com/YOUR-GITHUB-USERNAME/unicorn-fun)
 
 > My awesome module
 
@@ -35,23 +10,23 @@ There's also a [Yeoman generator](https://github.com/sindresorhus/generator-nm).
 ## Install
 
 ```
-$ npm install unicorn-fun
+$ npm install sevenflash/node-module-boilerplate
 ```
 
 
 ## Usage
 
 ```js
-const unicornFun = require('unicorn-fun');
+const example = require('sevenflash/node-module-boilerplate')
 
-unicornFun('unicorns');
-//=> 'unicorns & rainbows'
+example('diadem')
+//=> 'diadem is awesome'
 ```
 
 
 ## API
 
-### unicornFun(input, options?)
+### example(input, options?)
 
 #### input
 
@@ -66,6 +41,6 @@ Type: `object`
 ##### postfix
 
 Type: `string`<br>
-Default: `rainbows`
+Default: `awesome`
 
 Lorem ipsum.
